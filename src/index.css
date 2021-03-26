@@ -1,13 +1,110 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html, body, #root {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'PT Sans', sans-serif;
+  background: #2915e3;
+  background: linear-gradient(315deg, #2915e3 27%, rgba(131, 22, 219, 0.961205) 76%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.home {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
+
+.home .banner {
+  font-size: 8rem;
+  color: #F5F1FC;
+}
+
+.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 2em;
+  color: #F5F1FC;
+}
+
+.btn {
+  position: relative;
+  top: 5%;
+  left: 2%;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.5rem;
+  border-radius: .5rem;
+  background: #3313AF;
+  color: #F5F1FC;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  height: 4vh;
+  margin-left: 4vw;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 30vh;
+  width: 20vw;
+}
+
+form input {
+  margin: 1em;
+  height: 4vh;
+  font-size: 1.2em;
+  border-radius: .2em;
+}
+
+form .buttons {
+  position: static;
+  width: 100%;
+  display: inherit;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.regText {
+  color: #F5F1FC;
+}
+
+.register {
+  height: 40vh;
+}
+
+.register button {
+  margin-left: .5vw;
+}
+/*# sourceMappingURL=index.css.map */

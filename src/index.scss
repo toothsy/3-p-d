@@ -1,0 +1,77 @@
+html,body,#root{
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'PT Sans', sans-serif;
+    background: rgb(41,21,227);
+    background: linear-gradient(315deg, rgba(41,21,227,1) 27%, rgba(131,22,219,0.9612045501794468) 76%);
+}
+
+.home{
+    height: 100%;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    user-select:none;
+    .banner{
+        font-size: 8rem;
+        color: #F5F1FC;
+    }
+    
+}
+.login{
+    display: flex;
+    flex-direction:column;
+    font-size:2em;
+    color: #F5F1FC;
+}
+.btn{
+    position: relative;
+    top:5%;
+    left:2%;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.5rem;
+    border-radius:.5rem;
+    background: #3313AF;
+    color: #F5F1FC;
+    transition: transform .2s;
+    height:4vh;
+    margin-left: 4vw;
+}
+
+.btn:hover{
+    transform:scale(1.2);
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    height:30vh;
+    width:20vw;
+    input{
+        margin:1em;
+        height:4vh;
+        font-size: 1.2em;
+        border-radius: .2em;
+    }
+    .buttons{
+        position:static;
+        width:100%;
+        display:inherit;
+        flex-direction:row;
+    }
+}
+
+.regText{
+    color: #F5F1FC;
+}
+
+.register{
+    height:40vh;
+    button{
+        margin-left: .5vw;
+    }
+}

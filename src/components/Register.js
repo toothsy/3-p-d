@@ -23,7 +23,7 @@ export default function Register() {
         try{ 
                 replyFromServer = await axios({
                 method: 'post',
-                url: 'https://internshala-server.herokuapp.com/register',
+                url: ' https://doot-server.herokuapp.com/register',
                 data:{
                     username:u,
                     password:p

@@ -19,7 +19,7 @@ export default function Login() {
         try{ 
                 replyFromServer = await axios({
                 method: 'post',
-                url: 'https://internshala-server.herokuapp.com/login',
+                url: ' https://doot-server.herokuapp.com/login',
                 data:{
                     username:u,
                     password:p

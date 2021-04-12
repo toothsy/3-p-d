@@ -22,10 +22,6 @@ html, body, #root {
       -ms-flex-pack: center;
           justify-content: center;
   text-decoration: none;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 
 .home .banner {
@@ -62,11 +58,6 @@ html, body, #root {
   margin-left: 4vw;
 }
 
-.btn:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-
 form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -84,6 +75,7 @@ form input {
   height: 4vh;
   font-size: 1.2em;
   border-radius: .2em;
+  background-color: rgba(72, 8, 124, 0.961);
 }
 
 form .buttons {
@@ -106,5 +98,50 @@ form .buttons {
 
 .register button {
   margin-left: .5vw;
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) {
+  .form {
+    width: 100%;
+  }
+  .form .i-f {
+    width: 80vw;
+    height: 10vh;
+    position: relative;
+    left: 5%;
+    right: 0;
+    font-size: .9em;
+    background-color: rgba(72, 8, 124, 0.961);
+    color: white;
+  }
+  .form .btn {
+    position: relative;
+    width: 30vw;
+    height: 7vh;
+    left: 80%;
+  }
+  .home .banner {
+    font-size: 4.6em;
+  }
+  .btn {
+    position: relative;
+    width: 30vw;
+    height: 7vh;
+  }
+  .register form {
+    width: 80vw;
+  }
+  .register form ::-webkit-input-placeholder {
+    color: rgba(196, 54, 231, 0.842);
+  }
+  .register form :-ms-input-placeholder {
+    color: rgba(196, 54, 231, 0.842);
+  }
+  .register form ::-ms-input-placeholder {
+    color: rgba(196, 54, 231, 0.842);
+  }
+  .register form ::placeholder {
+    color: rgba(196, 54, 231, 0.842);
+  }
 }
 /*# sourceMappingURL=index.css.map */

@@ -15,12 +15,10 @@ html,body,#root{
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    user-select:none;
     .banner{
         font-size: 8rem;
         color: #F5F1FC;
     }
-    
 }
 .login{
     display: flex;
@@ -42,9 +40,7 @@ html,body,#root{
     margin-left: 4vw;
 }
 
-.btn:hover{
-    transform:scale(1.2);
-}
+
 
 form{
     display:flex;
@@ -56,6 +52,7 @@ form{
         height:4vh;
         font-size: 1.2em;
         border-radius: .2em;
+        background-color: rgba(72, 8, 124, 0.961);
     }
     .buttons{
         position:static;
@@ -73,5 +70,45 @@ form{
     height:40vh;
     button{
         margin-left: .5vw;
+    }
+}
+
+@media only screen and (min-device-width : 360px)   
+and (max-device-width : 640px) {
+    .form{
+        width:100%;
+        .i-f{
+            width:80vw;
+            height:10vh;
+            position: relative;
+            left:5%;
+            right: 0;
+            font-size: .9em;
+            background-color: rgba(72, 8, 124, 0.961);
+            color:white;
+        }
+        .btn{
+            position:relative;
+            width: 30vw;
+            height:7vh;
+            left:80%;
+        }
+
+    }
+    .home .banner{
+        font-size:4.6em;
+
+    }
+   .btn{
+        position:relative;
+        width: 30vw;
+        height:7vh;
+    }
+
+    .register form{
+        width:80vw;
+        ::placeholder{
+            color:rgba(196, 54, 231, 0.842);
+        }
     }
 }
